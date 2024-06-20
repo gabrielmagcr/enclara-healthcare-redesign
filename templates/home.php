@@ -28,7 +28,7 @@ endwhile; endif; wp_reset_postdata();
 
 <section class="block-hero home-hero">
 	<div class="inner">
-		<div class="home-hero--content">
+		<div class="home-hero--content test">
 			<figure>
 				<img class="home-page-logo" src="<?php echo $root . '/assets/img/ehc-white-rev.png' ?>" alt="Enclara Healthcare Logo">
 			</figure>
