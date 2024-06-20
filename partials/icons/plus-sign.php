@@ -1,0 +1,1 @@
+<svg viewBox="0 0 86 86"><rect width="86" height="86" fill="none"/><title>plus-sign</title><circle cx="43" cy="43" r="42.5" fill="none" stroke="#c2c3c5" stroke-miterlimit="10"/><polygon points="60.83 38.94 47.31 38.94 47.31 25.42 39.36 25.42 39.36 38.94 25.83 38.94 25.83 46.89 39.36 46.89 39.36 60.42 47.31 60.42 47.31 46.89 60.83 46.89 60.83 38.94" fill="#5392c1"/></svg>
