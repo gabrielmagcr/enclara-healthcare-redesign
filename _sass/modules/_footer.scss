@@ -1,0 +1,116 @@
+
+.site-footer {
+	padding: 4em 0;
+	background: $blue;
+	color: $white;
+	ul {
+		list-style:none;margin:0;padding:0;
+		li {
+			font-size: .9em;
+		}
+	}
+	h5 {
+		font-family: $accent-font;
+		text-transform: uppercase;
+		color: $secondary;
+		font-size: 0.9em;
+	}
+
+
+}
+
+
+.site-footer--logo {
+	width: 131px; height:50px;
+	background-image: url('../img/ehc-white-rev.png');
+	background-repeat: no-repeat;
+	@include background-size(100% auto);
+	@include transition(all .3s ease);
+	margin-bottom: 1.5em;
+}
+
+
+
+.site-footer--nav, .site-footer--links {
+	
+	li {
+		display: block;
+		text-transform: uppercase;
+		margin-bottom: .3em;
+		letter-spacing: 1px;
+	}
+	a {
+		display: inline-block;
+		color: $white;
+		font-family: $accent-font;
+		padding: .15em 0;
+	}
+}
+
+.site-footer--links {
+	a {
+
+	}
+}
+
+
+.inner-copyright {
+	position: relative;
+}
+.site-footer--copyright {
+	position: absolute; right:0; bottom: -3em;
+	font-size: .9em;
+
+	p {
+		text-align: left;
+		margin: 0;
+	}
+	a {
+		color: $white;
+		font-weight:bold;
+	}
+}
+
+
+.site-footer--social {
+
+	a {
+		color: $secondary;
+		font-size: 1.3em;
+	}
+	li {
+		display: inline-block;
+		margin-right: 1em;
+	}
+}
+
+
+#sitebymag {
+	text-transform: uppercase;
+	font-family: $accent-font;
+	color: $secondary;
+	margin-top: 1em;
+
+	a {
+		color: $secondary;
+		@include transition(all .3s ease);
+		&:hover {color: $white;}
+	}
+}
+
+
+@media (min-width:$bp-lg) {
+
+
+	.site-footer {
+		padding: 6em 0;
+	}
+
+	.site-footer--logo {
+		width: 180px; height:70px;
+		margin-bottom: 2.5em;
+	}
+	
+	
+	
+}

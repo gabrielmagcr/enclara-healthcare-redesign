@@ -1,0 +1,157 @@
+
+html.js .home {
+
+	
+  .feature-cols {
+		
+		h4, p, figure {
+			opacity:0;
+			@include transform(translateY(40px));
+			@include transition(all 0.1s ease 0.05s);
+		}
+		figure {
+			@include transform(translateY(50px) rotate(25deg));
+		}
+
+
+		.is-in-view {
+			figure, h4, p {
+				opacity:1;
+				@include transform(translateY(0) rotate(0deg));
+				@include transition(all 3s $ease-out-circ .5s);
+			}
+			h4 {
+				@include transition-delay(.6s);
+			}
+			p {
+				@include transition-delay(.71s);
+			}
+		}
+	}
+
+
+
+	.company-cols {
+		.companies--logo, p, .companies--item-btn {
+			opacity:0;
+			@include transform(translateY(40px));
+			@include transition(all 0.1s ease 0.05s);
+		}
+
+		.is-in-view {
+			
+			.companies--logo, p, .companies--item-btn {
+				opacity:1;
+				@include transform(translateY(0));
+				@include transition(all 3s $ease-out-circ .5s);
+			}
+			p {
+				@include transition-delay(.6s);
+			}
+			.companies--item-btn {
+				@include transition-delay(.71s);
+			}
+
+		}	
+	}
+
+
+
+
+
+	.block-news--title, .block-news--content, .block-news--viewall {
+		opacity:0;
+		@include transform(translateY(40px));
+		@include transition(all 0.1s ease 0.05s);
+
+		&.is-in-view {
+			opacity:1;
+			@include transform(translateY(0) rotate(0deg));
+			@include transition(all 3s $ease-out-circ .5s);
+		}
+	}
+
+
+	.posts-slider--rightarr {
+		opacity:0;
+		@include transform(translateX(-50px) rotate(-90deg));
+		@include transition(all 0.1s ease 0.05s);
+	}
+
+	.is-in-view {
+		.posts-slider--rightarr {
+			opacity:1;
+			@include transform(translateX(0) rotate(0deg));
+			@include transition(all 3s $ease-out-circ 1s);
+		}
+	}
+	
+
+	.posts-slider--leftarr {
+		opacity:0;
+		@include transform(translateX(50px) rotate(90deg));
+		@include transition(all 0.1s ease 0.05s);
+	}
+
+	.is-in-view {
+		.posts-slider--leftarr {
+			opacity:1;
+			@include transform(translateX(0) rotate(0deg));
+			@include transition(all 3s $ease-out-circ 1s);
+		}
+	}
+
+	
+
+	
+	.block-services--tagline {
+		blockquote, h4 {
+			opacity:0;
+			@include transform(translateY(40px));
+			@include transition(all 0.1s ease 0.05s);
+		}
+	}
+	.is-in-view {
+		.block-services--tagline {
+			blockquote, h4 {
+				opacity:1;
+				@include transform(translateY(0) rotate(0deg));
+				@include transition(all 3s $ease-out-circ .5s);
+			}
+			blockquote {
+				@include transition-delay(.6s);
+			}
+		}
+	}
+	
+
+	.inner--tagline {
+
+		~ .enc-swirly {
+				opacity: 0;
+				@include transform(translateY(-90px) scale(0.65) rotate(-45deg));
+				@include transition(all 0.1s ease 0.05s);
+		}
+
+		&.is-in-view {
+			~ .enc-swirly {
+				opacity: 1;
+				@include transform(translateY(0) scale(1) rotate(0deg));
+				@include transition(all 5s $ease-out-circ 0s);
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+	
+
+
+}

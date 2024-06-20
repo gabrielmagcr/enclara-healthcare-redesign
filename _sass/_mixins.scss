@@ -1,0 +1,124 @@
+
+// MIXINS
+//============================//
+
+@mixin button($display:inline-block,$font-size:1em,$bg:$primary,$color:$white,$padding:1em 1.75em .9em) {
+	display: $display;
+	background: $bg;
+	color: $color;
+	padding: $padding;
+	font-size: $font-size;
+	text-transform: uppercase;
+	font-family: $accent-font;
+	border: none;
+	letter-spacing: 1.2px;
+	@include transition(all .25s ease);
+	&:hover {
+		background: lighten($bg,12%);
+	}
+}
+
+
+@mixin sr-only() {
+	position: absolute !important;
+  height: 1px; width: 1px; 
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+@mixin smooth() {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@function headings() {
+	@return h1,h2,h3,h4,h5,h6;
+}
+
+
+
+@mixin box-sizing($size) {
+	@include prefixer(box-sizing, $size, webkit moz spec);
+}
+
+@mixin background-size($size) {
+	@include prefixer(background-size, $size, webkit moz spec);
+}
+
+@mixin border-radius($size) {
+	@include prefixer(border-radius, $size, webkit moz spec);
+}
+@mixin box-shadow($size) {
+	@include prefixer(box-shadow, $size, webkit moz spec);
+}
+@mixin text-shadow($size) {
+	@include prefixer(text-shadow, $size, webkit moz spec);
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie);
+}
+
+@mixin image-2x($path, $width, $height) {
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+    background-image: url(#{$path});
+    @include background-size($width $height);
+  }
+}
+
+@mixin unselectable() {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+
+
+
+
+
+
+
+
+//===============================================================//
+//Typography functions & mixins (shouldn't need to adjust)
+//typography settings are in.... base/_settings.scss
+
+@function context-calc($scale, $base, $value) {
+	@return ($scale/$base)#{$value};
+}
+@function measure-margin($scale, $measure, $value) {
+	$pixelValue: $measure/$scale;
+	$remValue: $pixelValue * $font-base;
+
+	@if $value == rem {
+		@return $pixelValue#{$value};
+	} @else if $value == em {
+		@return ($remValue/$scale)#{$value};
+	} @else {
+		@return $remValue#{$value};
+	}
+}
+@mixin type-scale($scale, $base, $value, $measure:"") {
+	@if $value == rem {
+		font-size: $scale#{px};
+		font-size: context-calc($scale, $base, $value);
+	} @else if $value == em {
+		font-size: context-calc($scale, $base, $value);
+	} @else {
+		font-size: $scale#{px};
+	}
+	@if $measure != "" {
+		@if $value == rem {
+			margin-bottom: measure-margin($scale, $measure, $value: px);
+			margin-bottom: measure-margin($scale, $measure, $value);
+		} @else if $value == em {
+			margin-bottom: measure-margin($scale, $measure, $value: em);
+		} @else {
+			margin-bottom: measure-margin($scale, $measure, $value);
+		}
+	}
+}

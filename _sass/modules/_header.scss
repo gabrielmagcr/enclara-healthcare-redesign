@@ -1,0 +1,310 @@
+
+.site-header {
+	position: absolute; z-index: 9999;
+	top:0; left:0; width:100%;
+	padding:0;
+
+	.inner {
+		position: relative;
+	}
+
+	.group-liner {
+		padding-top: 15px;
+		border-bottom: 2px solid darken($white,5%);
+	}
+}
+
+#site-title {
+	display:block;
+	float: left;
+	color: $black;
+	width: 131px; height:50px;
+	background-image: url('../img/EnclaraHealthcareLogo1.png');
+	@include background-size(100% auto);
+	@include transition(all .3s ease);
+
+	span {
+		@include sr-only();
+	}
+
+	&:active {
+		@include transform(scale(0.95));
+	}
+}
+
+.primary-nav {
+	display: none;
+	background: $white;
+	ul {
+		line-height:1;
+		list-style:none;padding:0;margin:0;
+		@include clearfix();
+	}
+
+	li {
+		display: block;
+		text-align: right;
+		font-family: $accent-font;
+		text-transform: uppercase;
+		font-size: .9em;
+		letter-spacing: 1.55px;
+	}
+	a {
+		color: $black;
+		display:block;
+		padding: 1.5em 1.2em;
+	}
+}
+
+
+
+.mobile-toggle {
+	float: right;
+	background: transparent;
+	width:4em; height:4em;
+	border: none;
+	border-left: 2px solid rgba(darken($white,5%),0.1);
+
+	.mttext {
+		@include sr-only();
+	}
+}
+
+// Home page overrides
+//-------------------------------------------------------------------//
+.home {
+	#site-title {
+		display: none !important;
+	}
+
+	#main-nav {
+		background-color: #2a3754;
+	}
+
+	.group-liner {
+		border: none;
+	}
+
+	.fa-bars {
+		background-color: white;
+	}
+}
+
+
+//SM Up
+//---------------//
+@media (min-width:$bp-sm) {
+	.home {
+		#site-title {
+			display: none !important;
+		}
+	}
+}
+
+//MD UP
+//---------------//
+@media (min-width:$bp-md) {
+
+	.site-header {
+		
+		.inner {
+			border-bottom: 2px solid darken($white,5%);
+		}
+		.group-liner {
+			padding-top: 30px;
+			border: none;
+		}
+	}
+
+	#site-title {
+		float: none;
+	}
+
+	.site-header_left {
+		@include span-columns(3);
+	}
+
+	.site-header_right {
+		@include span-columns(9);
+	}
+
+	.mobile-toggle {
+		display: none;
+	}
+	
+	.primary-nav {
+		display:block !important;
+		background: transparent;
+		float: right;
+
+		li {
+			position: relative;
+			display: inline-block;
+			margin-right: 5px;
+			padding: 30px 0 10px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			&.is-current-page {
+				a {color: $red;}
+				a:before {
+					opacity: 1;
+					@include transform(translateY(0));
+				}
+			}
+		}
+
+		a {
+			padding-right: 5px;
+			padding-left: 5px;
+			@include transition(all .25s ease);
+
+			&:before {
+				content:""; display:block; position: absolute;
+				top:0; left:0; width:100%; height:5px;
+				background: $red; 
+				pointer-events: none;
+				@include transform-origin(right center);
+				@include transform( scale(0,1));
+				
+				@include transition-property(transform);
+				@include transition-duration(.1s);
+				@include transition-timing-function($ease-out-circ);
+			}
+			&:hover {
+	
+				&:before {
+					@include transform-origin(left center);
+					@include transition-duration(.55s);
+					@include transform(scale(1,1));
+				}
+			}
+		}
+	
+	} //end primary-nav
+
+
+
+	
+	body.home {
+
+		.site-header {
+			.inner {
+				border-bottom: 2px solid rgba(darken($white,5%),0.1);
+			}
+			.group-liner {
+				border: none;
+			}
+		}
+		
+		.primary-nav {
+
+
+			a:hover {
+				color: rgba($white,0.75);
+			}
+		}
+	}
+
+	.home {
+		.site-header_left, #site-title {
+			display: none !important;
+		}
+	}
+
+}
+
+
+
+//LG UP
+//---------------//
+@media (min-width:$bp-lg) {
+
+	#site-title {
+		width: 164px; height:63px;
+	}
+
+	.primary-nav {
+
+
+		li {
+			margin-right: 15px;
+			padding-top: 40px;
+			padding-bottom: 20px;
+		}
+		a {
+			padding-right: 10px;
+			padding-left: 10px;
+		}
+	}
+
+	.home {
+		.site-header_left, #site-title {
+			display: none !important;
+		}
+	}
+
+
+}
+
+
+
+
+//LG UP
+//---------------//
+@media (min-width:$bp-xl) {
+
+
+	.primary-nav {
+
+		li {
+			margin-right: 25px;
+			padding-top: 40px;
+			padding-bottom: 20px;
+		}
+		a {
+			padding-right: 12px;
+			padding-left: 12px;
+		}
+	}
+
+	.home {
+		.site-header_left, #site-title {
+			display: none !important;
+		}
+	}
+
+
+}
+
+
+
+
+
+@media (min-width:$bp-xxl) {
+
+	.site-header {
+
+		.group-liner {
+			padding-top: 40px;
+		}
+	}
+
+	.primary-nav {
+
+		li {
+			padding-top: 50px;
+			padding-bottom: 22px;
+			margin-right: 32px;
+		}
+		a {
+			padding-right: 16px;
+			padding-left: 16px;
+		}
+	
+	}
+
+
+}

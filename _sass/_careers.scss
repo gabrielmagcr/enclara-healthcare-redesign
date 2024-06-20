@@ -1,0 +1,667 @@
+
+
+.page-template-careers {
+
+	.apply-container {
+		text-align: center;
+
+		.apply-now {
+			margin-top: -1em;
+		}
+	}
+
+	.hero-careers {
+
+		.img-full-width {
+			margin-bottom: 2em;
+		}
+	}
+
+	.core-values, .employee-benefits {
+		text-align: center;
+		margin: .2em auto;
+
+		.img-center {
+			text-align: center;
+			margin: 4em auto;
+		}
+
+		.core-values-image img{
+			max-width: 100%;
+		}
+
+		.core-values-text-container, .employee-benefits-text-container {
+			margin: 2em auto;
+
+			.divider {
+				margin: 3em auto;
+			}
+			h4 {
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	.values-list {
+		.value-item {
+			@include clearfix();
+			border-top: 2px solid darken($white, 5%);
+			padding: 2em 0;
+
+			&.toggled .toggle-icon-container {
+				box-shadow: #d05367 0 0 0 2px;
+
+				span {
+					background-color: #d05367;
+					@include transform(rotate(180deg));
+					+ span {
+						@include transform(rotate(0deg));
+					}
+				}
+			}
+
+			&.toggled .value-hidden-container * {
+				opacity: 1;
+			}
+		}
+
+		.value-title-container {
+			margin: 2em 0;
+
+			h3 {
+				text-align: center;
+				margin: .25em 0 0 1em;
+				font-size: 1.25em;
+				font-family: $heading-light;
+				display: inline-block;
+
+				&:hover {
+					cursor: pointer;
+				}
+			}
+			
+			.values-icon-fig {
+				height: 3.3em;	
+				width: 3.3em;
+				float: left;
+
+				svg {
+					margin: -.5em auto;
+					height: 100%;
+					width: 100%;
+				}
+			}
+			.toggle-icon-container {
+				position: relative;
+				float: right;
+				width: 2em; height: 2em;
+				border-radius: 50%;
+				box-shadow: #cacaca 0 0 0 2px;
+				cursor: pointer;
+				@include transition(all 2s);
+				
+				span {
+					display:block; position:absolute;
+					width: 1em; height: .1em;
+					background:#cacaca;
+					top: .95em; left: .5em;
+					@include transition(all .2s $ease-in-out-back);
+					
+
+					+ span {
+						@include transform(rotate(90deg))}
+				}
+				
+				}
+		}
+
+		.value-hidden-container {
+			display: none;
+
+			* {
+				opacity: 0;
+				@include transition(all 2s);
+			}
+
+			h6 {
+				text-transform: uppercase;
+				color: $gray;
+			}
+		}
+	}
+
+	.benefit-container {
+		margin-bottom: 3em;
+
+		h5 {
+			text-align: center;
+		}
+	}
+
+	.benefits-inner {
+		.clear {
+			@include clearfix();
+		}
+
+		.icon-fig {
+			height: 5.3em;
+			width: 5.3em;
+			margin: 2em auto;
+
+			svg {
+				height: 100%;
+				width: 100%;
+			}
+		}
+	}
+
+	.rewards-section {
+		margin: 2em 0;
+
+		h3{
+			font-size: 1.5em;
+		}
+
+		hr.divider--red {
+			width: 1em;
+			margin: .2em 0 2em 0;
+		}
+
+		.careers-image-container {
+			position: relative;
+			max-width: 450px;
+			margin: 2em auto;
+		}
+
+		.careers-image-container img {
+			max-width: 100%;
+			display: block;
+			position: relative; z-index:199;
+		}
+	}
+
+	.career--positions {
+		margin: 5em 0;
+		text-align: center;
+		.positions-button {
+			margin-top: 5em;
+		}
+	}
+
+	.positions-list {
+		text-align: initial;
+	}
+
+	.careers-eeo{
+		padding: 1.5em, 2em;
+		background-color: $blue;
+		padding: 8em 0;
+		color: white;
+		text-align: center;
+	}
+
+	.careers-eeo--content {
+		max-width: 42em;
+		margin: auto;
+
+		hr.divider--red {
+			margin: auto;
+		}
+	}
+
+	.careers-eeo--content, .career--positions hr.divider {
+		margin: 2em auto;
+	}
+
+	.careers-eeo .eeo-title {
+		color: white;
+	}
+
+	.career-inner ul{
+		list-style: none;
+		padding: 0;
+	}
+
+	.block-services {
+		margin-top: 5em;
+	}
+
+	.block-services--tagline blockquote {
+		padding: 0;
+	}
+
+	.locations-container {
+		position: relative;
+	}
+
+	.sidebar {
+		position: relative;
+	}
+
+	.locations-tile {
+
+		h5 {
+			font-size: -1em;
+		}
+
+		font-size: 1.5em;
+		position: relative;
+		margin-bottom: 3em;
+	}
+
+	.bottom-bar {
+		margin-top: .5em;
+		position: relative;
+	}
+
+	.locations-tile .divider--red {
+		width: 2em;
+	}
+
+	.image-container {
+		//@include clearfix();
+		float: right;
+		position: relative; 
+	}
+
+	.image-container img {
+		max-width: 100%;
+		display: block;
+		position: relative; z-index:199;
+	}
+
+	.image-container-background {
+		position: absolute; top:1.5em; right:-1.5em;
+		background-color: #5d78d5;
+		height: 100%;
+		width: 100%;
+	}
+
+	.cta-banner {
+		position: relative;
+		text-align: center;
+		background-color: $blue;
+		margin-bottom: 2em;
+		overflow: hidden;
+		padding: 3em 0;
+	}
+
+	.careers-inner {
+		position: relative;
+		z-index: 5;
+		color: white;
+	}
+
+	.button {
+		margin: 1.5em 0;
+	}
+
+	.join-us-title {
+		color: white;
+	}
+
+	#particles-js {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	#particles-js .particles-js-canvas-el {
+		width: 100% !important; 
+		height: auto !important;
+	}
+
+	.testimonial-image-figure {
+		float: left;
+	}
+
+	.testimonial-image {
+		@include border-radius(50%); 
+		border: .5px solid red;
+		padding: .3em;
+	}
+
+	.testimonial-text-container {
+		padding-left: 2em;
+		margin-top: 1.5em;
+		margin-left: 7em;
+	}
+
+	.testimonial-name {
+		margin-bottom: 0;
+		font-family: $heading-light;
+	}
+
+	.carousel-inner {
+		width: 100%;
+		padding: 0 .5em;
+
+		figure {
+			display: none;
+		}
+	}
+
+	.carousel-cell {
+		width: 100%;
+	}
+
+	.flickity-page-dots li {
+		display: inline-block;
+		//margin: 1em 0;
+		backface-visibility: hidden;
+		@include transition(all .25s $ease-out-quad);
+	}
+
+	.dot.is-selected {
+		@include transform(scale(2));
+		background-color: $primary;
+	}
+
+		// 580px
+	@media (min-width:$bp-sm) {
+
+
+		// =========== Why Work Here =========== //
+
+		.img-center {
+			margin: 6em auto;
+		}
+
+		.rewards-section {
+			margin: 4em 0;
+		}
+
+		.core-values .core-values-text-container {
+			margin: 1em auto;
+		}
+
+		.core-values-text-container, .employee-benefits-text-container {
+			width: 100%;
+		}
+
+		.core-values .employee-benefits {
+			text-align: center;
+			margin-top: 5em;
+		}
+
+		.employee-benefits {
+			text-align: center;
+			margin-top: 0;
+		}
+
+		.careers-image-container {
+			margin: 2em auto;
+			float: none;
+
+			figure {
+				margin: 0 auto;
+			}
+		}
+
+		.core-values-text-container, .employee-benefits-text-container {
+			margin: 4em auto;
+			width: 50%;
+
+			.divider {
+				margin: 3em auto;
+			}
+			h3 {
+				text-transform: uppercase;
+			}
+		}
+
+		// =========== Who We Hire =========== //
+
+		.careers-eeo--content hr.divider {
+			margin: 2.5em auto;
+		}
+
+		.careers-eeo--content {
+			max-width: 55em;
+			margin: auto;
+		}
+
+		.block-services {
+			margin-top: 3em;
+		}
+
+		// =========== Both =========== //
+
+		.flickity-page-dots li {
+			display: inline-block;
+			backface-visibility: hidden;
+			@include transition(all .25s $ease-out-quad);
+		}
+
+		.dot.is-selected {
+			@include transform(scale(2));
+			background-color: $primary;
+		}
+
+		hr.divider {
+			width: 12em;
+		}
+
+	}
+
+	// 767px
+	@media (min-width:$bp-md) {
+
+		.core-values .img-center {
+			margin: 2em auto;
+		}
+
+		hr.divider {
+			width: 14em;
+		}
+
+		.locations-tile {
+			margin-bottom: 4em;
+		}
+
+		.bottom-bar {
+			margin-top: .8em;
+		}
+
+		.block-services {
+			margin-top: 4em;
+		}
+
+		.careers-eeo--content {
+			max-width: 60em;
+			margin: auto;
+		}
+
+		.careers-eeo--content hr.divider {
+			margin: 2.5em auto;
+		}	
+
+		.image-container {
+			width: 60%;
+		}
+
+		.careers-image-container {
+			float: right;
+			position: relative;
+		}
+
+		.sidebar {
+			width: 40%;
+			float: left;
+		}
+
+		.rewards-section {
+			margin: 4em 0;
+		}
+
+		.core-values-text-container {
+			margin: 5em auto;
+		}
+
+		.core-values-text-container, .employee-benefits-text-container {
+			margin: 6em auto;
+
+			.divider {
+				margin: 3em auto;
+			}
+			h3 {
+				text-transform: uppercase;
+			}
+		}
+
+		.value-hidden-container {
+			margin: 1em 0 0 10.5em;
+		}
+
+		.values-icon-fig {
+			margin: -.5em 3em;
+		}
+
+		.flickity-page-dots {
+			top: 50%;
+			left: -5em;
+			transform: translateY(-50%);
+			text-align: left;
+			width: auto;
+		}
+
+		.flickity-page-dots li {
+			display: block;
+			margin: 1em 0;
+			backface-visibility: hidden;
+			@include transition(all .25s $ease-out-quad);
+		}
+
+		.dot.is-selected {
+			@include transform(scale(2));
+			background-color: $primary;
+		}
+	}
+
+	// 992px
+	@media (min-width:$bp-lg) {
+
+		.core-values .img-center {
+			margin: 3em auto;
+		}
+
+		hr.divider {
+			width: 16em;
+		}
+
+		.block-services {
+			margin-top: 5em;
+		}
+
+		.rewards-section {
+			margin: 8em 0;
+		}
+
+		.careers-image-container {
+			float: right;
+			position: relative;
+		}
+
+		.careers-eeo--content {
+			max-width: 65em;
+			margin: auto;
+		}
+
+		.core-values-text-container {
+			margin: 6em auto;
+		}
+
+		.core-values-text-container, .employee-benefits-text-container {
+			width: 50%;
+		}
+
+		.flickity-page-dots {
+			top: 50%;
+			left: -5em;
+			transform: translateY(-50%);
+			text-align: left;
+			width: auto;
+		}
+
+		.flickity-page-dots li {
+			display: block;
+			margin: 1em 0;
+			backface-visibility: hidden;
+			@include transition(all .25s $ease-out-quad);
+		}
+
+		.dot.is-selected {
+			@include transform(scale(2));
+			background-color: $primary;
+		}
+	}
+
+	// 1199px
+	@media (min-width:$bp-xl) {
+
+		.core-values .img-center {
+			margin: 4em auto;
+		}
+
+		hr.divider {
+			width: 18em;
+		}
+
+		.core-values-text-container, .employee-benefits-text-container {
+			width: 50%;
+		}
+
+		.employee-benefits .employee-benefits-text-container {
+			margin: 2em auto;
+		}
+
+		.careers-image-container {
+			float: right;
+			position: relative;
+		}
+
+		.careers-eeo--content {
+			max-width: 70em;
+			margin: auto;
+		}
+
+		.block-services {
+			margin-top: 6em;
+		}
+
+		.rewards-section {
+			margin: 0 0 3em	0;
+		}
+
+		.flickity-page-dots {
+			top: 50%;
+			left: -5em;
+			transform: translateY(-50%);
+			text-align: left;
+			width: auto;
+		}
+
+		.flickity-page-dots li {
+			display: block;
+			margin: 1em 0;
+			backface-visibility: hidden;
+			@include transition(all .25s $ease-out-quad);
+		}
+
+		.dot.is-selected {
+			@include transform(scale(2));
+			background-color: $primary;
+		}
+	}
+}  
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+
+//setup variables for color/type/grid
+@import "settings"; 
+
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+//custom theme mixins
+@import "mixins";
+
+//necolas gallaghers normalize, slightly modded
+@import "normalize"; 
+
+//typography 
+@import "modules/typography";
+
+@import "modules/fontello";
+
+//import authored sass here
+@import "modules/general";
+@import "modules/header";
+
+@import "modules/slider-3d";
+
+@import "modules/footer";
+
+@import "modules/forms";
+
+@import "home";
+@import "contact";
+@import "careers";
+@import "privacy";
+
+@import "inview";
+
+@import "companies";
+@import "about";
+
+@import "news";
+@import "news-single";
+
+@import "overlays";
+
+//plugin and library css
+@import "plugin/flickity"; //flickity base css
+
+

@@ -1,0 +1,48 @@
+.page-template-companies {
+
+    .block-divider {
+        padding: 2em 0;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .title-responsive {
+        font-size: 1.5em;
+    }
+
+    .block-divider:nth-last-of-type(1) {
+        display: none;
+    }
+
+    .company-block:nth-last-of-type(2) {
+        padding-bottom: 7em;
+    }
+
+    hr.divider--small--has-bottom {
+        margin-bottom: 2.5em;
+    }
+
+    .company-block {
+        margin-top: 1em;
+    }
+
+    @media (min-width: $bp-md) {
+       .figure-logo {
+            text-align: right;
+        }
+
+
+        .block-divider {
+            padding-top: 3.5em;
+        }
+
+        
+    }
+
+
+
+
+
+}

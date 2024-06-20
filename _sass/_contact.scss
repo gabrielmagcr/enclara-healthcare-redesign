@@ -1,0 +1,226 @@
+
+
+.block-contactform {
+	padding-bottom: 4em;
+}
+
+.location-figure {
+	height: 3em;
+}
+
+.location-image--enclara-pharmacia, .location-image--turn-key-health {
+	margin-top: 1em;
+}
+
+.page-template-contact {
+	.hr-divider--location {
+		margin-bottom: 2em;
+	}
+}
+
+.block-locations {
+	padding: 4em 0;
+}
+
+
+.location--main {
+	margin-bottom: 4.5em;
+}
+
+.location--map {
+
+}
+
+.location--map-inner {
+	position: relative;
+	margin-left: -.5em;
+	&:before {
+		content:""; display:block; position:absolute;
+		width:100%; height:100%; top:1em; left:1em;
+		background: $blue-light;
+	}
+}
+
+.location-logo {
+	img {
+		width: 11em;
+	}
+}
+
+#eh-googlemap {
+	height: 220px;
+}
+
+.location--col {
+	margin-bottom: 2em;
+
+	h5 {
+		font-size: 1.55em;
+		margin-bottom: .25em;
+	}
+	h3 {
+		font-size: 1.8em;
+		margin-bottom: .25em;
+	}
+}
+
+
+.location--col-details {
+	padding-top: 1.5em;
+	
+	p {
+		position: relative;
+		line-height: 1.4;
+		padding-left: 1.5em;
+
+		span {
+			display: block;
+			position: absolute;
+			left:0; top: .1em;
+			font-size: 1.1em;
+			font-family: $heading-font;
+			color: $blue-light;
+		}
+	}
+}
+
+
+
+
+
+@media (min-width:$bp-md) {
+
+	.block-locations {
+		padding: 6em 0;
+	}
+
+	.location--main {
+		margin-bottom: 5em;
+	}
+
+
+	.location--map {
+		@include span-columns(8);
+	}
+
+	#eh-googlemap {
+		height: 300px;
+	}
+}
+
+
+
+
+@media (min-width:$bp-lg) {
+
+	.block-contactform {
+		padding-bottom: 5em;
+	}
+
+	.location--col-details {
+		padding-top: 2em;
+
+		p {
+			font-size: 1em;
+		}
+	}
+}
+
+
+
+@media (min-width:$bp-xl) {
+
+	#eh-googlemap {
+		height: 380px;
+	}
+
+	.location--main {
+		margin-bottom: 7em;
+
+		.location--col {
+			padding-top: 3em;
+		}
+	}
+
+	.location--col {
+		p {
+			margin-bottom: 2em;
+
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.location--col-details {
+		padding-top: 2em;
+
+		p {
+			font-size: 1.1em;
+		}
+	}
+
+}
+
+
+@media (min-width:$bp-xxl) {
+
+	
+	.location--col-details {
+		
+		p {
+			position: relative;
+			line-height: 1.4;
+			padding-left: 2em;
+			font-size: 1.2em;
+
+			span {
+				display: block;
+				position: absolute;
+				left:0; top: .1em;
+				font-size: 1.1em;
+				font-family: $heading-font;
+				color: $blue-light;
+			}
+		}
+	}
+
+}
+
+
+
+
+
+
+
+//Forms
+
+.block-contact--form {
+	position: relative;
+
+	input[type="text"], input[type="email"],
+	input[type="tel"], textarea {
+		font-family: $heading-light;
+		font-size: 18px;
+	}
+
+
+	div.wpcf7-validation-errors {
+		border: none;
+		background: #f7e700;
+		border: 2px solid darken(#f7e700, 5%);
+		font-family: $accent-font;
+		padding: 15px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

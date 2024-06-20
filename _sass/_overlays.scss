@@ -1,0 +1,108 @@
+
+
+// ------- OVERLAY --------------//
+body.is-showing-overlay {
+  overflow:hidden;
+}
+
+.overlay-outer {
+  position: fixed; top:0; left:0; width:100%; height:100%;
+  background: rgba($white,0.9);
+  visibility:hidden; opacity:0;
+  overflow:scroll;
+  @include transition(all .25s ease);
+
+  .is-showing-overlay & {
+    visibility: visible;
+    opacity:1;
+  }
+}
+
+
+.overlay-content {
+  position: relative;
+  width: 94%;
+  max-width: 52.5em;
+  margin: 5% auto;
+  background: $white;
+  padding: 2em 0;
+  @include box-shadow(rgba($blue,0.08) 0 0 2em);
+
+  @include transform(translateY(150px));
+  @include transition(transform .05s ease 0s);
+
+
+  .is-showing-overlay & {
+    opacity: 1;
+    @include transform(translateY(-10px));
+    @include transition(transform .55s $ease-out-circ .1s);
+  }
+}
+.overlay-content--inner {
+  padding: 2em 1em;
+}
+
+#overlay-close {
+  display:block; position: absolute; padding:0; margin:0; outline:none;
+  top: .8em; left:50%;
+  margin-left: -1em;
+  width:2em; height:2em;
+  border-radius:50%; border:none; background:none; @include appearance(none);
+
+  svg {
+    display:block;
+    @include transform(translateZ(0));
+    @include backface-visibility(none);
+    @include transition(all .25s $ease-out-circ);
+  }
+
+  &:hover {
+    svg {
+      @include transform(translateZ(0) rotate(90deg));
+    }
+  }
+}
+
+
+
+
+
+@media (min-width:$bp-sm) {
+
+	.overlay-content {
+		padding-top: 0;
+	}
+
+  .overlay-content--inner {
+    padding: 4em 3em 2em;
+  }
+
+	
+	#overlay-close {
+		left: auto; right: .8em;
+	}
+
+
+}
+
+
+@media (min-width:$bp-lg) {
+
+
+	.overlay-content--inner {
+	  padding: 4em 5em 3em;
+	}
+
+	#overlay-close {
+		top: 1.2em; right:1.2em;
+	}
+
+}
+
+
+
+
+
+
+
+

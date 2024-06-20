@@ -1,0 +1,132 @@
+//COLOR PALLETTE
+//-------------------//
+//new browser defaults (delete if not needed)
+$aqua:  #7FDBFF;
+
+$blue:  #39466d; //dark enclara
+
+$blue-light: #5d78d5; 
+
+$navy:  #001F3F;
+$teal:  #39CCCC;
+$green: #2ECC40;
+$olive: #3D9970;
+$lime:  #01FF70;
+
+$yellow:  #FFDC00;
+$orange:  #FF851B;
+
+$red: #E41D3A; //red 
+
+$fuchsia: #F012BE;
+$purple:  #B10DC9;
+$maroon:  #85144B;
+
+$white:  #fff;
+$silver: #ddd;
+
+$gray:   #555; //body copy
+$gray-dark: #555;
+
+$black:  #242424;
+
+
+$primary: $red;
+$secondary: #5d78d5;
+
+$dark: $blue;
+
+
+
+
+//SOCIAL COLORS-----------//
+
+$twitter: #00aced;
+$facebook: #3b5998;
+$googleplus: #dd4b39;
+$pinterest: #cb2027;
+$linkedin: #007bb6;
+$youtube: #bb0000;
+$vimeo: #1ab7ea;
+$tumblr: #32506d;
+
+
+
+
+// GRID SETTINGS
+//---------------------//
+
+$gutter: 9em;
+
+$grid-cols: 12;
+
+//grid will work with as many breakpoints as you need
+$grid-breakpoints: ( 
+  sm: "580px", 
+  md: "767px", 
+  lg: "992px",
+  xl: "1199px",
+  xxl: "1440px" 
+);
+
+//use these when wiritng media queries
+// ex: @media (min-width:$bp-sm) {}
+$bp-sm: map-get($grid-breakpoints,'sm');
+$bp-md: map-get($grid-breakpoints,'md');
+$bp-lg: map-get($grid-breakpoints,'lg');
+$bp-xl: map-get($grid-breakpoints,'xl');
+$bp-xxl: map-get($grid-breakpoints,'xxl');
+
+
+
+
+//TYPOGRAPHY SETTINGS
+//---------------------//
+$body-font: 'proxima_novalight', Helvetica, sans-serif;
+
+$heading-font: 'AvenirNext-Bold', Helvetica, sans-serif;
+
+$heading-light: 'AvenirNext-Medium', Helvetica, sans-serif;
+
+$accent-font: 'proxima_novabold', Helvetica, sans-serif;
+
+$body-background: darken($white, 2%);
+$body-color: $gray-dark;
+$heading-color: $black;
+
+//used in setting sizes, line-heights, margins...
+$line-height: 1.8;
+$font-size: 105;
+$font-base: 16 * ($font-size/100);
+$font-measure: $font-base * $line-height;
+
+//'rem' will output with pixel fallback
+$typescale-unit: rem;
+
+//paragraph spacing & indent
+$p-spacing: false;
+$p-indent: 1em;
+
+$small-print-size: .85em;
+
+$headings-scale: (
+  tera: 88,
+  giga: 70,
+  mega: 54,//h1
+  alpha: 46, 
+  beta: 38,
+  gamma: 32,
+  delta: 26,
+  epsilon: 21,//h6
+  zeta: 18
+);
+$headings-map: (
+  h1: mega,
+  h2: alpha,
+  h3: beta,
+  h4: gamma,
+  h5: delta,
+  h6: zeta
+);
+
+
