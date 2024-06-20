@@ -2,6 +2,8 @@
 // MIXINS
 //============================//
 
+@use "sass:math";
+
 @mixin button($display:inline-block,$font-size:1em,$bg:$primary,$color:$white,$padding:1em 1.75em .9em) {
 	display: $display;
 	background: $bg;
@@ -88,16 +90,16 @@
 //typography settings are in.... base/_settings.scss
 
 @function context-calc($scale, $base, $value) {
-	@return ($scale/$base)#{$value};
+	@return math.div($scale, $base)#{$value};
 }
 @function measure-margin($scale, $measure, $value) {
-	$pixelValue: $measure/$scale;
+	$pixelValue: math.div($measure, $scale);
 	$remValue: $pixelValue * $font-base;
 
 	@if $value == rem {
 		@return $pixelValue#{$value};
 	} @else if $value == em {
-		@return ($remValue/$scale)#{$value};
+		@return math.div($remValue, $scale)#{$value};
 	} @else {
 		@return $remValue#{$value};
 	}
