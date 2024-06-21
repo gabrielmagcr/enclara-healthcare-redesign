@@ -84,9 +84,10 @@ wp_reset_postdata();
 	<div class="hero-bg-container">
 		<div class="hero-bg" style="background: url('/wp-content/uploads/EnclaraHealthCareHero2.webp');  background-repeat: no-repeat; background-position: top; background-size: cover;"></div>
 		<div class=" home-hero--content about-hero--content">
-
+			<div class="hero--content about--content">
 			<?php do_page_headline($fields['sub_headline'], $fields['main_headline']); ?>
 			<?php echo $fields['intro_paragraph_text'] ?>
+			</div>
 		</div>
 	</div>
 </section>
