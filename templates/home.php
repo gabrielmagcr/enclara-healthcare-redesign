@@ -64,29 +64,30 @@ wp_reset_postdata();
 
 <section class="block-hero home-hero">
 	<div class="hero-bg-container test">
-		<div class="hero-bg" style="background: url('<?php echo get_field('home_hero_background_image'); ?>');  background-repeat: no-repeat; background-position: top; background-size: cover;"></div>
+		<div class="hero-bg" style="background: url('<?php echo get_field('home_hero_background_image'); ?>');  background-repeat: no-repeat; background-position: right; background-size: cover;"></div>
 		<div class="home-hero--content">
-			<figure>
-				<img class="home-page-logo" src="<?php echo $root . '/assets/img/ehc-white-rev.png' ?>" alt="Enclara Healthcare Logo">
-			</figure>
-			<h3 class="mega"><?php the_field('hero_mainheading', $post->ID); ?></h3>
-			<p><?php the_field('hero_bodytext', $post->ID); ?></p>
+			<div class="hero--content">
+				<figure>
+					<img class="home-page-logo" src="<?php echo $root . '/assets/img/ehc-white-rev.png' ?>" alt="Enclara Healthcare Logo">
+				</figure>
+				<h3 class="mega"><?php the_field('hero_mainheading', $post->ID); ?></h3>
+				<p><?php the_field('hero_bodytext', $post->ID); ?></p>
 
-			<!--	Look for external links, if the link is external, echo target blank		-->
-			<!--			<a href="-->
-			<?php //$link = ($fields['hero_link_internal']) ? $fields['hero_internal_link_values'] : $fields['hero_external_link']; $target_blank = true; echo $link
-			?>
-			<!--" class="button" --><?php //$target_blank = ($target_blank) ? $target_blank = 'target="_blank"' : false; echo $target_blank 
-									?><!--><?php //the_field('hero_buttontext', $post->ID); 
-																																					?><!--</a>-->
-			<a class="button learn-more" href="<?php echo $fields['hero_external_link'] ?>"><?php echo $fields['hero_buttontext'] ?></a>
-			<!--<div class="home-hero--downarr">
+				<!--	Look for external links, if the link is external, echo target blank		-->
+				<!--			<a href="-->
+				<?php //$link = ($fields['hero_link_internal']) ? $fields['hero_internal_link_values'] : $fields['hero_external_link']; $target_blank = true; echo $link
+				?>
+				<!--" class="button" --><?php //$target_blank = ($target_blank) ? $target_blank = 'target="_blank"' : false; echo $target_blank 
+										?><!--><?php //the_field('hero_buttontext', $post->ID); 
+											?><!--</a>-->
+				<a class="button learn-more" href="<?php echo $fields['hero_external_link'] ?>"><?php echo $fields['hero_buttontext'] ?></a>
+				<!--<div class="home-hero--downarr">
 				<a href="#what-we-do" class="downarr" data-scroll data-scroll-offset="-30">
 					<span class="downarr--line"></span>
 					<span class="downarr--arrow"></span>
 				</a>
 			</div>-->
-
+			</div>
 		</div>
 	</div>
 </section>
