@@ -43,6 +43,9 @@ wp_reset_postdata();
 		color: #fff;
 		font-size: 2.1em;
 	}
+	.about-hero--content{
+		background: linear-gradient(0deg, #2a3754, #39466e 90%, rgba(10, 50, 84, 0) 100%);
+		}
 	@media (min-width: 1023px) {
 		.hero-bg {
 			background: url('/wp-content/uploads/EnclaraHealthCareHero3-e1718999227732.webp')!important;
