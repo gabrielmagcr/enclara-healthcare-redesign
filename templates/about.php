@@ -66,7 +66,13 @@ wp_reset_postdata();
 			background: linear-gradient(90deg, #39466e, #39466e 80%, rgba(10, 50, 84, 0) 100%);
 			display: flex;
         flex-direction: column;
+		align-items: flex-start;
         justify-content: center;
+        text-align: start;
+        color: #fff;
+		}
+		.about--content p{
+			color: #fff;
 		}
 	}
 
