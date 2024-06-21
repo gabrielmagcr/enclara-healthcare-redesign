@@ -87,7 +87,7 @@ wp_reset_postdata();
         justify-content: center;
 		}
 
-		.home-hero--content h3 .hero--content p {
+		.home-hero--content h3, .hero--content p {
 			color: #2a3754;
 		}
 
