@@ -95,7 +95,7 @@ wp_reset_postdata();
 			font-size: 1.05em;
 			max-width: none;
 	}
-
+	}
 </style>
 
 
