@@ -25,9 +25,9 @@ if (have_posts()) : while (have_posts()) : the_post();
 endwhile; endif; wp_reset_postdata();
 ?>
 <style>
-	.hero-bg-container{
-    display: flex;
-  }
+	.site-header{
+		position: relative;
+	}
   .hero-bg{
       height: 300px;
     }
