@@ -28,8 +28,8 @@ endwhile; endif; wp_reset_postdata();
 
 <section class="block-hero home-hero">
 	<div class="hero-bg-container">
-		<div class="hero-bg" style="background-url('');"><?php echo var_dump(get_field('hero-bg-img')) ; ?></div>
-		<div class="home-hero--content test">
+		<div class="hero-bg" style="background-url('<?php echo get_field('home_hero_background_image'); ?>');"></div>
+		<div class="home-hero--content">
 			<figure>
 				<img class="home-page-logo" src="<?php echo $root . '/assets/img/ehc-white-rev.png' ?>" alt="Enclara Healthcare Logo">
 			</figure>
