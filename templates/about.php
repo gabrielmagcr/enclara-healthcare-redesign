@@ -43,7 +43,10 @@ wp_reset_postdata();
 		color: #fff;
 		font-size: 2.1em;
 	}
-
+	
+	.about--content p {
+		max-width: 0;
+	}
 	.about-hero--content {
 		background: linear-gradient(0deg, #2a3754, #39466e 90%, rgba(10, 50, 84, 0) 100%);
 	}
@@ -82,7 +85,7 @@ wp_reset_postdata();
 		}
 	}
 
-	@media(min-width: 1250px) {
+	@media(min-width: 1350px) {
 		.hero-bg {
 			background-size: contain !important;
 			background-position: right !important;
