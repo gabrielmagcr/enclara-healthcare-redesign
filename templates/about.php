@@ -86,7 +86,7 @@ wp_reset_postdata();
 		.hero-bg {
 			background-size: contain !important;
 			background-position: right !important;
-			height: 70vh;
+			
 		}
 	}
 	@media(min-width: 1200px){
