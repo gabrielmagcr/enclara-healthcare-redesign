@@ -1968,12 +1968,12 @@ body {
 .home-hero--content {
   position: relative;
   z-index: 199;
-  color: #fff;
+  color: #2a3754;
   text-align: center;
 }
 .home-hero--content h1, .home-hero--content h3 {
   text-transform: uppercase;
-  color: #fff;
+  color: #2a3754;
 }
 .home-hero--content h1 {
   color: #242424;
