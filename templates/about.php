@@ -80,6 +80,7 @@ wp_reset_postdata();
 		.about--content p {
 			color: #fff;
 			font-size: 0.9em;
+			font-weight: 500;
 		}
 	}
 
