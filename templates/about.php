@@ -82,19 +82,18 @@ wp_reset_postdata();
 		}
 	}
 
-	@media(min-width: 1200px) {
+	@media(min-width: 1250px) {
 		.hero-bg {
 			background-size: contain !important;
 			background-position: right !important;
 			
 		}
-	}
-	@media(min-width: 1200px){
 		.about--content p {
 			
 			font-size: 1.05em;
 		}
 	}
+
 </style>
 
 
