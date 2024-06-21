@@ -41,7 +41,10 @@ wp_reset_postdata();
 <style>
 	@media (min-width: 1023px) {
 		.hero-bg {
-			background: url('/wp-content/uploads/EnclaraHealthCareHero3-e1718999227732.webp');
+			background: url('/wp-content/uploads/EnclaraHealthCareHero3-e1718999227732.webp')!important;
+			background-size: cover !important;
+			background-repeat: no-repeat !important;
+			background-position: left !important;
 		}
 	}
 </style>

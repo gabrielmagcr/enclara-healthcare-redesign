@@ -2056,7 +2056,6 @@ body {
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: left !important;
-    background-size: contain;
     height: 70vh;
     position: absolute;
     width: 100%;
