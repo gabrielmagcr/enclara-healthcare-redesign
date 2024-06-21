@@ -64,6 +64,9 @@ wp_reset_postdata();
 
 		.about-hero--content {
 			background: linear-gradient(90deg, #39466e, #39466e 80%, rgba(10, 50, 84, 0) 100%);
+			display: flex;
+        flex-direction: column;
+        justify-content: center;
 		}
 	}
 
@@ -71,6 +74,7 @@ wp_reset_postdata();
 		.hero-bg {
 			background-size: contain !important;
 			background-position: right !important;
+			height: 70vh;
 		}
 	}
 </style>
