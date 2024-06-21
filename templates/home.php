@@ -48,7 +48,10 @@ wp_reset_postdata();
 		}
 
 		.hero-bg {
-			background: url('/wp-content/uploads/EnclaraHealthCareHero-1-scaled-e1718991409637.webp');
+			background: url('/wp-content/uploads/EnclaraHealthCareHero-1-scaled-e1718991409637.webp') !important;
+			background-size: contain !important;
+			background-repeat: no-repeat !important;
+			background-position: right !important;
 			background-size: contain;
 			height: 70vh;
 			position: absolute;
@@ -66,7 +69,7 @@ wp_reset_postdata();
 
 <section class="block-hero home-hero">
 	<div class="hero-bg-container test">
-		<div class="hero-bg" style="background: url('/wp-content/uploads/EnclaraHealthCareHero-scaled.webp');  background-repeat: no-repeat; background-position: right; background-size: cover;"></div>
+		<div class="hero-bg" style="background: url('/wp-content/uploads/EnclaraHealthCareHero-scaled.webp');  background-repeat: no-repeat; background-position: topt; background-size: cover;"></div>
 		<div class="home-hero--content">
 			<div class="hero--content">
 				<figure>
@@ -81,7 +84,7 @@ wp_reset_postdata();
 				?>
 				<!--" class="button" --><?php //$target_blank = ($target_blank) ? $target_blank = 'target="_blank"' : false; echo $target_blank 
 										?><!--><?php //the_field('hero_buttontext', $post->ID); 
-											?><!--</a>-->
+												?><!--</a>-->
 				<a class="button learn-more" href="<?php echo $fields['hero_external_link'] ?>"><?php echo $fields['hero_buttontext'] ?></a>
 				<!--<div class="home-hero--downarr">
 				<a href="#what-we-do" class="downarr" data-scroll data-scroll-offset="-30">
