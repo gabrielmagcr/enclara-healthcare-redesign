@@ -40,8 +40,20 @@ wp_reset_postdata();
 		background: linear-gradient(0deg, #2a3754, #39466e 85%, rgba(10, 50, 84, 0) 100%);
 		margin-top: -100px;
 	}
+	.home-page-logo-mobile{
+			display: block;
+		}
+	.home-page-logo-desktop{
+			display: none;
+		}
 
 	@media(min-width: 1023px) {
+		.home-page-logo-mobile{
+			display: none;
+		}
+		.home-page-logo-desktop{
+			display: block;
+		}
 		.hero-bg-container {
 			display: flex;
 			height: 70vh;
@@ -59,22 +71,26 @@ wp_reset_postdata();
 		}
 
 		.home-hero--content {
-			padding:  40px 20px;
+			padding: 40px 20px;
 			background: linear-gradient(90deg, #ffffff, #ffffff 80%, rgba(10, 50, 84, 0) 100%);
 			margin-top: 0;
 			width: 60%;
 		}
-		.hero--content{
+
+		.hero--content {
 			width: 60%;
 			margin: 0 auto;
 		}
-		.home-hero--content h3{
-      color: #2a3754;
-    }
-	.home-page-logo {
-		width: 16em;
+
+		.home-hero--content h3 {
+			color: #2a3754;
+		}
+
+		.home-page-logo {
+			width: 16em;
+		}
 	}
-	}
+
 	@media(min-width: 1200px) {
 		.hero-bg {
 			background-size: contain !important;
@@ -89,7 +105,8 @@ wp_reset_postdata();
 		<div class="home-hero--content">
 			<div class="hero--content">
 				<figure>
-					<img class="home-page-logo wmu-preview-img"  src="/wp-content/uploads/2016/11/EnclaraHealthcareLogo1.png" alt="Enclara Healthcare Logoo">
+					<img class="home-page-logo home-page-logo-mobile wmu-preview-img" src=<?php echo $root . '/assets/img/ehc-white-rev.png' ?>" alt="Enclara Healthcare Logo">
+					<img class="home-page-logo home-page-logo-desktop wmu-preview-img" src="/wp-content/uploads/2016/11/EnclaraHealthcareLogo1.png" alt="Enclara Healthcare Logo">
 				</figure>
 				<h3 class="mega"><?php the_field('hero_mainheading', $post->ID); ?></h3>
 				<p><?php the_field('hero_bodytext', $post->ID); ?></p>
