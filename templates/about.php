@@ -39,21 +39,27 @@ wp_reset_postdata();
 ?>
 
 <style>
+	.about-hero--content h1{
+		color: #fff;
+		font-size: 2.1em;
+	}
 	@media (min-width: 1023px) {
 		.hero-bg {
 			background: url('/wp-content/uploads/EnclaraHealthCareHero3-e1718999227732.webp')!important;
-			background-size: cover !important;
-			background-repeat: no-repeat !important;
-			background-position: left !important;
+		
+		}
+		.about-hero--content{
+			background: linear-gradient(90deg, #39466e, #39466e 80%, rgba(10, 50, 84, 0) 100%);
 		}
 	}
+
 </style>
 
 
 <section class="">
 	<div class="hero-bg-container">
 		<div class="hero-bg" style="background: url('/wp-content/uploads/EnclaraHealthCareHero2.webp');  background-repeat: no-repeat; background-position: top; background-size: cover;"></div>
-		<div class=" home-hero--content">
+		<div class=" home-hero--content about-hero--content">
 
 			<?php do_page_headline($fields['sub_headline'], $fields['main_headline']); ?>
 			<?php echo $fields['intro_paragraph_text'] ?>
