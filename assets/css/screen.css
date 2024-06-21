@@ -1953,7 +1953,7 @@ body {
 }
 .home .home-page-logo {
   width: 12em;
-  margin-bottom: 2em;
+  margin: 0 auto 2em;
 }
 .home #what-we-do {
   z-index: 0;
@@ -1968,12 +1968,12 @@ body {
 .home-hero--content {
   position: relative;
   z-index: 199;
-  color: #2a3754;
+  color: #fff;
   text-align: center;
 }
 .home-hero--content h1, .home-hero--content h3 {
   text-transform: uppercase;
-  color: #2a3754;
+  color: #fff;
 }
 .home-hero--content h1 {
   color: #242424;
@@ -2016,7 +2016,6 @@ body {
 @media (min-width: 1199px) {
   .home-hero--content h3 {
     font-size: 3.2em;
-    color: #2a3754;
   }
 }
 .block-contactform {
