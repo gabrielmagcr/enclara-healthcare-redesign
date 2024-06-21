@@ -24,7 +24,15 @@ if (have_posts()) : while (have_posts()) : the_post();
 	$fields = get_fields($post->ID);
 endwhile; endif; wp_reset_postdata();
 ?>
+<style>
+	.hero-bg-container{
+    display: flex;
+  }
+  .hero-bg{
+      height: 300px;
+    }
 
+</style>
 
 <section class="block-hero home-hero">
 	<div class="hero-bg-container test">

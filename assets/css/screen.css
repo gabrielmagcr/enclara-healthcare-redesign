@@ -1965,14 +1965,6 @@ body {
   backface-visibility: hidden;
 }
 
-.home-hero .hero-bg-container {
-  display: flex;
-}
-
-.hero-bg {
-  height: 300px;
-}
-
 .home-hero--content {
   position: relative;
   z-index: 199;
