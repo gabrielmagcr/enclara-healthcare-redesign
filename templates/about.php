@@ -39,18 +39,18 @@ endwhile; endif; wp_reset_postdata();
 
 
 <section class="hero-default">
-
+<div class="hero-bg-container">
+<div class="hero-bg" style="background: url('/wp-content/uploads/EnclaraHealthCareHero2.webp');  background-repeat: no-repeat; background-position: top; background-size: cover;"></div>
 	<div class="inner">
 
 		<?php do_page_headline($fields['sub_headline'],$fields['main_headline']); ?>
 
 	</div>
-
+</div>
 </section>
 
 <section>
-<div class="hero-bg-container">
-<div class="hero-bg" style="background: url('/wp-content/uploads/EnclaraHealthCareHero2.webp');  background-repeat: no-repeat; background-position: top; background-size: cover;"></div>
+
 	<div class="inner">
 
 		<div class="inner-narrow">
@@ -61,7 +61,7 @@ endwhile; endif; wp_reset_postdata();
 
 	</div>
 
-</div>
+
 </section>
 
 
