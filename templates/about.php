@@ -16,7 +16,7 @@
 
 
 
-get_header(); 
+get_header();
 
 
 
@@ -30,31 +30,32 @@ $fields = null;
 
 if (have_posts()) : while (have_posts()) : the_post();
 
-	$fields = get_fields($post->ID);
+		$fields = get_fields($post->ID);
 
-endwhile; endif; wp_reset_postdata();
+	endwhile;
+endif;
+wp_reset_postdata();
 
 ?>
 
 <style>
 	@media (min-width: 1023px) {
-		.hero_bg{
-background: url('/wp-content/uploads/EnclaraHealthCareHero3-e1718999227732.webp');
+		.hero-bg {
+			background: url('/wp-content/uploads/EnclaraHealthCareHero3-e1718999227732.webp');
+		}
 	}
-	}
-	
 </style>
 
 
 <section class="">
-<div class="hero-bg-container">
-<div class="hero-bg" style="background: url('/wp-content/uploads/EnclaraHealthCareHero2.webp');  background-repeat: no-repeat; background-position: top; background-size: cover;"></div>
-	<div class="inner">
+	<div class="hero-bg-container">
+		<div class="hero-bg" style="background: url('/wp-content/uploads/EnclaraHealthCareHero2.webp');  background-repeat: no-repeat; background-position: top; background-size: cover;"></div>
+		<div class="inner">
 
-		<?php do_page_headline($fields['sub_headline'],$fields['main_headline']); ?>
+			<?php do_page_headline($fields['sub_headline'], $fields['main_headline']); ?>
 
+		</div>
 	</div>
-</div>
 </section>
 
 <section>
@@ -76,7 +77,9 @@ background: url('/wp-content/uploads/EnclaraHealthCareHero3-e1718999227732.webp'
 
 <section id="what-we-do" class="block-services home-services">
 
-	<div class="inner"><hr class="divider divider--red"></div>
+	<div class="inner">
+		<hr class="divider divider--red">
+	</div>
 
 	<div class="inner inner--tagline">
 
@@ -90,36 +93,37 @@ background: url('/wp-content/uploads/EnclaraHealthCareHero3-e1718999227732.webp'
 
 	</div>
 
-  
+
 
 	<div class="inner feature-cols">
 
-		<?php 
+		<?php
 
-		if ($fields['what_we_do_columns']) { $count=0;
+		if ($fields['what_we_do_columns']) {
+			$count = 0;
 
-			foreach ($fields['what_we_do_columns'] as $col) { $count++; ?>
+			foreach ($fields['what_we_do_columns'] as $col) {
+				$count++; ?>
 
-			
 
-			<div class="col-third">
 
-				<div class="feature-col-content">
+				<div class="col-third">
 
-					<figure><?php get_template_part('partials/icons/'.$col['icon']) ?></figure>
+					<div class="feature-col-content">
 
-					<h4><?php echo $col['title']; ?></h4>
+						<figure><?php get_template_part('partials/icons/' . $col['icon']) ?></figure>
 
-					<p><?php echo $col['text']; ?></p>
+						<h4><?php echo $col['title']; ?></h4>
+
+						<p><?php echo $col['text']; ?></p>
+
+					</div>
 
 				</div>
 
-			</div>
 
-			
 
 		<?php	}
-
 		} ?>
 
 	</div>
@@ -134,9 +138,9 @@ background: url('/wp-content/uploads/EnclaraHealthCareHero3-e1718999227732.webp'
 
 <div class="page-default--intro">
 
-			<h3 class="section--title"><?php echo $fields['code_conduct_title']; ?></h3>
+	<h3 class="section--title"><?php echo $fields['code_conduct_title']; ?></h3>
 
-			<p><?php echo $fields['code_conduct_para']; ?></p>
+	<p><?php echo $fields['code_conduct_para']; ?></p>
 
 </div>
 
@@ -170,57 +174,59 @@ background: url('/wp-content/uploads/EnclaraHealthCareHero3-e1718999227732.webp'
 
 	<div class="inner executive-tiles">
 
-		
-
-		<?php 
-
-			$execquery = new WP_query(array(
-
-					'post_type' => 'enclara-execteam',
-
-					'posts_per_page' => -1,
-
-					'order' => 'ASC'
-
-				));	
 
 
+		<?php
 
-			if ($execquery->have_posts()) : while ($execquery->have_posts()) : $execquery->the_post();
+		$execquery = new WP_query(array(
+
+			'post_type' => 'enclara-execteam',
+
+			'posts_per_page' => -1,
+
+			'order' => 'ASC'
+
+		));
+
+
+
+		if ($execquery->have_posts()) : while ($execquery->have_posts()) : $execquery->the_post();
 
 				$fields = get_fields();
 
 		?>
 
-		<div class="exec-col">
+				<div class="exec-col">
 
-			<div class="executive-card" data-bio-html='<?php echo $fields['executive_team_member_bio']; ?>'>
+					<div class="executive-card" data-bio-html='<?php echo $fields['executive_team_member_bio']; ?>'>
 
-				<div class="card-wrapper">
+						<div class="card-wrapper">
 
-					<div class="card-wrapper--inner">
+							<div class="card-wrapper--inner">
 
-						<h5><?php the_title(); ?></h5>
+								<h5><?php the_title(); ?></h5>
 
-						<p><span><?php echo $fields['executive_team_member_title']; ?></span></p>
+								<p><span><?php echo $fields['executive_team_member_title']; ?></span></p>
+
+							</div>
+
+						</div>
+
+						<button>Read Full Bio</button>
 
 					</div>
 
 				</div>
 
-				<button>Read Full Bio</button>
-
-			</div>
-
-		</div>
-
-		<?php endwhile; endif; wp_reset_postdata(); ?>
+		<?php endwhile;
+		endif;
+		wp_reset_postdata(); ?>
 
 
 
 	</div>
 
-	
+
 
 	<div class="inner bod-section">
 
@@ -238,51 +244,53 @@ background: url('/wp-content/uploads/EnclaraHealthCareHero3-e1718999227732.webp'
 
 	<div class="inner executive-tiles bod-tiles">
 
-		<?php 
+		<?php
 
 		$bodquery = new WP_query(array(
 
-				'post_type' => 'enclara-bod',
+			'post_type' => 'enclara-bod',
 
-				'posts_per_page' => -1,
+			'posts_per_page' => -1,
 
-				'order' => 'ASC'
+			'order' => 'ASC'
 
-			));	
+		));
 
 		if ($bodquery->have_posts()) : while ($bodquery->have_posts()) : $bodquery->the_post();
 
-			$fields = get_fields();
+				$fields = get_fields();
 
 		?>
 
 
 
-		<div class="exec-col">
+				<div class="exec-col">
 
-			<div class="executive-card" data-bio-html='<?php echo $fields['executive_team_member_bio']; ?>'>
+					<div class="executive-card" data-bio-html='<?php echo $fields['executive_team_member_bio']; ?>'>
 
-				<div class="card-wrapper">
+						<div class="card-wrapper">
 
-					<div class="card-wrapper--inner">
+							<div class="card-wrapper--inner">
 
-						<h5><?php the_title(); ?></h5>
+								<h5><?php the_title(); ?></h5>
 
-						<p><span><?php echo $fields['executive_team_member_title']; ?></span></p>
+								<p><span><?php echo $fields['executive_team_member_title']; ?></span></p>
+
+							</div>
+
+						</div>
+
+						<button>Read Full Bio</button>
 
 					</div>
 
 				</div>
 
-				<button>Read Full Bio</button>
 
-			</div>
 
-		</div>
-
-		
-
-		<?php endwhile; endif; wp_reset_postdata(); ?>
+		<?php endwhile;
+		endif;
+		wp_reset_postdata(); ?>
 
 	</div>
 
@@ -307,4 +315,3 @@ background: url('/wp-content/uploads/EnclaraHealthCareHero3-e1718999227732.webp'
 
 
 <?php get_footer();
-
