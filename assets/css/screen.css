@@ -2003,7 +2003,6 @@ body {
 @media (min-width: 767px) {
   .home-services {
     background: transparent;
-    margin-top: -3em;
   }
 }
 @media (min-width: 992px) {

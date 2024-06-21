@@ -33,7 +33,7 @@ endwhile; endif; wp_reset_postdata();
     }
 	.home-hero--content{
 		padding: 100px 20px 50px;
-    background: linear-gradient(0deg, #39466e, #0a3254 85%, rgba(10, 50, 84, 0) 100%);
+    background: linear-gradient(0deg, #39466e, #39466e 85%, rgba(10, 50, 84, 0) 100%);
     margin-top: -100px;
 }
 	
