@@ -1968,7 +1968,8 @@ body {
 .home-hero .hero-bg-container {
   display: flex;
 }
-.home-hero .hero-bg-container .hero-bg {
+
+.hero-bg {
   height: 300px;
 }
 
