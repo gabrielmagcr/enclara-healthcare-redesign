@@ -49,7 +49,7 @@ wp_reset_postdata();
 
 		.hero-bg {
 			background: url('/wp-content/uploads/EnclaraHealthCareHero-1-scaled-e1718991409637.webp') !important;
-			background-size: contain !important;
+			background-size: cover !important;
 			background-repeat: no-repeat !important;
 			background-position: right !important;
 			background-size: contain;
@@ -64,6 +64,12 @@ wp_reset_postdata();
 			margin-top: 0;
 			width: 60%;
 		}
+	}
+	@media(min-width: 1200px) {
+		.hero-bg {
+			background-size: contain !important;
+		}
+
 	}
 </style>
 
