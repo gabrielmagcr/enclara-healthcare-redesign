@@ -79,7 +79,7 @@ wp_reset_postdata();
 		<div class="home-hero--content">
 			<div class="hero--content">
 				<figure>
-					<img class="home-page-logo" litespeed_media_lazy_img_excludes src="/wp-content/uploads/2016/11/EnclaraHealthcareLogo1.png" alt="Enclara Healthcare Logo">
+					<img class="home-page-logo wmu-preview-img"  src="/wp-content/uploads/2016/11/EnclaraHealthcareLogo1.png" alt="Enclara Healthcare Logo">
 				</figure>
 				<h3 class="mega"><?php the_field('hero_mainheading', $post->ID); ?></h3>
 				<p><?php the_field('hero_bodytext', $post->ID); ?></p>
