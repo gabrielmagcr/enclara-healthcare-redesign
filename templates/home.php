@@ -107,7 +107,7 @@ wp_reset_postdata();
 
 <section class="block-hero home-hero">
 	<div class="hero-bg-container test">
-		<div class="hero-bg" style="background: url('/wp-content/uploads/EnclaraHealthCareHero-scaled.webp');  background-repeat: no-repeat; background-position: topt; background-size: cover;"></div>
+		<div class="hero-bg" style="background: url('/wp-content/uploads/EnclaraHealthCareHero-scaled.webp');  background-repeat: no-repeat; background-position: top; background-size: cover;"></div>
 		<div class="home-hero--content">
 			<div class="hero--content">
 				<figure>
