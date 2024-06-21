@@ -1965,13 +1965,11 @@ body {
   backface-visibility: hidden;
 }
 
-.home-hero {
-  position: relative;
-  overflow: hidden;
-  padding: 12em 0 7em;
-}
 .home-hero .hero-bg-container {
   display: flex;
+}
+.home-hero .hero-bg {
+  height: 300px;
 }
 
 .home-hero--content {
@@ -2010,19 +2008,12 @@ body {
 }
 
 @media (min-width: 767px) {
-  .home-hero {
-    padding-top: 10em;
-    padding-bottom: 14em;
-  }
   .home-services {
     background: transparent;
     margin-top: -3em;
   }
 }
 @media (min-width: 992px) {
-  .home-hero {
-    padding-top: 12em;
-  }
   .home-hero--content h3 {
     font-size: 3em;
   }
@@ -2031,16 +2022,8 @@ body {
   }
 }
 @media (min-width: 1199px) {
-  .home-hero {
-    padding-top: 14em;
-  }
   .home-hero--content h3 {
     font-size: 3.2em;
-  }
-}
-@media (min-width: 1440px) {
-  .home-hero {
-    padding-top: 18em;
   }
 }
 .block-contactform {

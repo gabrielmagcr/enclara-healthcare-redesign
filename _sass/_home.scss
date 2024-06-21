@@ -42,12 +42,11 @@
 
 
 .home-hero {
-  position: relative;
-  overflow: hidden;
-  padding: 12em 0 7em;
-
   .hero-bg-container{
     display: flex;
+  }
+  .hero-bg{
+    height: 300px;
   }
 }
 
@@ -89,10 +88,7 @@
 
 @media (min-width: $bp-md) {
 
-  .home-hero {
-    padding-top: 10em;
-    padding-bottom: 14em;
-  }
+
 
   .home-services {
     background: transparent;
@@ -103,10 +99,7 @@
 
 @media (min-width: $bp-lg) {
 
-  .home-hero {
-    padding-top: 12em;
 
-  }
 
   .home-hero--content {
     h3 {
@@ -121,10 +114,7 @@
 
 @media (min-width: $bp-xl) {
 
-  .home-hero {
-    padding-top: 14em;
 
-  }
 
   .home-hero--content {
     h3 {
@@ -136,9 +126,7 @@
 
 @media (min-width: $bp-xxl) {
 
-  .home-hero {
-    padding-top: 18em;
-  }
+
 }
 
 
