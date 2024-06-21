@@ -27,7 +27,7 @@ endwhile; endif; wp_reset_postdata();
 
 
 <section class="block-hero home-hero">
-	<div class="hero-bg-container">
+	<div class="hero-bg-container test">
 		<div class="hero-bg" style="background: url('<?php echo get_field('home_hero_background_image'); ?>');  background-repeat: no-repeat; background-position: top; background-size: cover;"></div>
 		<div class="home-hero--content">
 			<figure>
