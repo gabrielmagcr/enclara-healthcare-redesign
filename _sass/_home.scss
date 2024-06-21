@@ -44,10 +44,13 @@
 .home-hero {
   .hero-bg-container{
     display: flex;
+
+    .hero-bg{
+      height: 300px;
+    }
+
   }
-  .hero-bg{
-    height: 300px;
-  }
+ 
 }
 
 .home-hero--content {
