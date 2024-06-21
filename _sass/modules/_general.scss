@@ -212,7 +212,7 @@ html.js {
 //---------------------------------//
 
 .hero-default {
-  padding-top: 10em;
+  padding-top: 5em;
   padding-bottom: 2em;
 }
 
@@ -264,9 +264,7 @@ html.js {
 
 @media (min-width:$bp-md) {
 
-  .hero-default {
-    padding-top: 12em;
-  }
+
   
   .page-default--intro {
     h1 {
@@ -277,20 +275,11 @@ html.js {
 }
 
 
-@media (min-width:$bp-lg) {
-  
-  .hero-default {
-    padding-top: 14em;
-  }
-
-}
 
 
 @media (min-width:$bp-xl) {
 
-  .hero-default {
-    padding-top: 15em;
-  }
+
 
   .page-default--intro {
     h1 {
@@ -299,13 +288,6 @@ html.js {
   }
 }
 
-
-@media (min-width:$bp-xxl) {
-
-  .hero-default {
-    padding-top: 17em;
-  }
-}
 
 
 

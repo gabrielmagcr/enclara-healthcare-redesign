@@ -92,7 +92,7 @@ wp_reset_postdata();
 		.about--content p {
 			
 			font-size: 1.05em;
-		}
+			max-width: none;
 	}
 
 </style>

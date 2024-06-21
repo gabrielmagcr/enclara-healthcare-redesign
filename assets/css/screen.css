@@ -603,7 +603,7 @@ html.js body.is-unloading #site-container {
 }
 
 .hero-default {
-  padding-top: 10em;
+  padding-top: 5em;
   padding-bottom: 2em;
 }
 
@@ -646,29 +646,13 @@ html.js body.is-unloading #site-container {
   }
 }
 @media (min-width: 767px) {
-  .hero-default {
-    padding-top: 12em;
-  }
   .page-default--intro h1 {
     font-size: 2.5em;
   }
 }
-@media (min-width: 992px) {
-  .hero-default {
-    padding-top: 14em;
-  }
-}
 @media (min-width: 1199px) {
-  .hero-default {
-    padding-top: 15em;
-  }
   .page-default--intro h1 {
     font-size: 2.8em;
-  }
-}
-@media (min-width: 1440px) {
-  .hero-default {
-    padding-top: 17em;
   }
 }
 .block-coverbg {
