@@ -59,11 +59,21 @@ wp_reset_postdata();
 		}
 
 		.home-hero--content {
-			padding: 100px 20px 50px;
+			padding:  40px 20px;
 			background: linear-gradient(90deg, #ffffff, #ffffff 80%, rgba(10, 50, 84, 0) 100%);
 			margin-top: 0;
 			width: 60%;
 		}
+		.hero--content{
+			width: 60%;
+			margin: 0 auto;
+		}
+		.home-hero--content h3{
+      color: #2a3754;
+    }
+	.home-page-logo {
+		width: 16em;
+	}
 	}
 	@media(min-width: 1200px) {
 		.hero-bg {
