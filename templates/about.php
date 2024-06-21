@@ -39,23 +39,40 @@ wp_reset_postdata();
 ?>
 
 <style>
-	.about-hero--content h1{
+	.about-hero--content h1 {
 		color: #fff;
 		font-size: 2.1em;
 	}
-	.about-hero--content{
+
+	.about-hero--content {
 		background: linear-gradient(0deg, #2a3754, #39466e 90%, rgba(10, 50, 84, 0) 100%);
+	}
+
+	@media (min-width: 426px) {
+		.hero-bg {
+			height: 500px;
 		}
+	}
+
 	@media (min-width: 1023px) {
 		.hero-bg {
-			background: url('/wp-content/uploads/EnclaraHealthCareHero3-e1718999227732.webp')!important;
-		
+			background: url('/wp-content/uploads/EnclaraHealthCareHero3-e1718999227732.webp') !important;
+			background-size: cover !important;
+			background-repeat: no-repeat !important;
+			background-position: left !important;
 		}
-		.about-hero--content{
+
+		.about-hero--content {
 			background: linear-gradient(90deg, #39466e, #39466e 80%, rgba(10, 50, 84, 0) 100%);
 		}
 	}
 
+	@media(min-width: 1200px) {
+		.hero-bg {
+			background-size: contain !important;
+			background-position: right !important;
+		}
+	}
 </style>
 
 
