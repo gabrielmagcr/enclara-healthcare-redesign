@@ -38,7 +38,7 @@ endwhile; endif; wp_reset_postdata();
 
 
 
-<section class="hero-default">
+<section class="">
 <div class="hero-bg-container">
 <div class="hero-bg" style="background: url('/wp-content/uploads/EnclaraHealthCareHero2.webp');  background-repeat: no-repeat; background-position: top; background-size: cover;"></div>
 	<div class="inner">
