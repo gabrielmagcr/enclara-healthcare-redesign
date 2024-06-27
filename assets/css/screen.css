@@ -2057,13 +2057,14 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-width: 500px;
   }
   .home-hero--content h3, .hero--content p {
     color: #2a3754;
     font-weight: 600;
   }
   .home-page-logo {
-    width: 16em;
+    width: 14em !important;
   }
 }
 @media (min-width: 1200px) {

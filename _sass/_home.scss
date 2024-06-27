@@ -178,6 +178,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        max-width: 500px;
 		}
 
 		.home-hero--content h3, .hero--content p {
@@ -186,7 +187,7 @@
 		}
 
 		.home-page-logo {
-			width: 16em;
+			width: 14em !important;
 		}
 	}
 
