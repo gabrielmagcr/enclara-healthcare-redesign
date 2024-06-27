@@ -73,6 +73,12 @@ wp_reset_postdata();
 			text-align: start;
 			color: #fff;
 		}
+		.about-hero--content h1{
+			margin-bottom: 0;
+		}
+		.divider{
+			margin-top: 1em;
+		}
 		.about--content{
 			align-items: flex-start;
 
@@ -80,6 +86,7 @@ wp_reset_postdata();
 		.about--content p {
 			color: #fff;
 			font-size: 0.9em;
+			line-height: 25px;
 			font-weight: 500;
 		}
 	}

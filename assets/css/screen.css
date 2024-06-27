@@ -1967,13 +1967,11 @@ body {
 }
 .home-hero--content h3 {
   font-size: 2.25em;
-  text-shadow: rgba(39, 48, 76, 0.55) 0 0 5px;
 }
 .home-hero--content p {
   max-width: 40em;
   margin-right: auto;
   margin-left: auto;
-  text-shadow: rgba(39, 48, 76, 0.35) 0 0 3px;
 }
 
 .home-hero--downarr {
@@ -1995,6 +1993,7 @@ body {
   }
   .home-hero--content p {
     font-size: 1.05em;
+    line-height: 25px;
   }
 }
 @media (min-width: 1199px) {
