@@ -77,7 +77,7 @@ wp_reset_postdata();
 			margin-bottom: 0;
 		}
 		.divider{
-			margin-top: 1em;
+			margin-top: 1em !important;
 		}
 		.about--content{
 			align-items: flex-start;
