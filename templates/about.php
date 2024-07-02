@@ -248,6 +248,7 @@ wp_reset_postdata();
 						<div class="card-wrapper">
 
 							<div class="card-wrapper--inner">
+								<img src="<?php echo $fields['executive_team_member_image']; ?>" alt="<?php echo $fields['executive_team_member_title']; ?>">
 
 								<h5><?php the_title(); ?></h5>
 
@@ -315,13 +316,13 @@ wp_reset_postdata();
 
 						<div class="card-wrapper">
 
-							<div class="card-wrapper--inner test">
+							<div class="card-wrapper--inner">
 
 								<h5><?php the_title(); ?></h5>
 
 								<p><span><?php echo $fields['executive_team_member_title']; ?></span></p>
 								
-								<img src="<?php echo $fields['executive_team_member_image']; ?>" alt="<?php echo $fields['executive_team_member_title']; ?>">
+							
 
 							</div>
 
