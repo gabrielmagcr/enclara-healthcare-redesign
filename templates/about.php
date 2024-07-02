@@ -48,7 +48,9 @@ wp_reset_postdata();
 	.about-hero--content {
 		background: linear-gradient(0deg, #2a3754, #39466e 90%, rgba(10, 50, 84, 0) 100%);
 	}
-
+	.card-wrapper--inner img{
+		width: 100px;
+	}
 	@media (min-width: 426px) {
 		.hero-bg {
 			height: 500px;
