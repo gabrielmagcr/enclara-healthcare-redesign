@@ -9,10 +9,11 @@ $execs.each(function(index) {
 	var $t = $(this),
 			name = $t.find('h5').text(),
 			pos = $t.find('p').text(),
-			biohtml = $(this).data('bio-html');
+			biohtml = $(this).data('bio-html'),
+			imgSrc = $t.find('img').attr('src');
 
 	var templ = '<div class="exec-bio">';
-	templ += '<div class="exec-bio--title"><h3>'+name+'</h3><p>'+pos+'</p><hr></div>';
+	templ += '<div class="exec-bio--title"><img src="'+imgSrc+'"><h3>'+name+'</h3><p>'+pos+'</p><hr></div>';
 	templ += '<div class="exec-bio--bio">'+biohtml+'</div>';
 	templ += '</div>';
 	
