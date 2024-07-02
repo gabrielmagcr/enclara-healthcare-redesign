@@ -315,7 +315,7 @@ wp_reset_postdata();
 
 						<div class="card-wrapper">
 
-							<div class="card-wrapper--inner">
+							<div class="card-wrapper--inner test">
 
 								<h5><?php the_title(); ?></h5>
 
