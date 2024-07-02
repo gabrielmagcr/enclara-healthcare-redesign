@@ -320,6 +320,8 @@ wp_reset_postdata();
 								<h5><?php the_title(); ?></h5>
 
 								<p><span><?php echo $fields['executive_team_member_title']; ?></span></p>
+								
+								<img src="<?php echo $fields['executive_team_member_image']; ?>" alt="<?php echo $fields['executive_team_member_title']; ?>">
 
 							</div>
 
