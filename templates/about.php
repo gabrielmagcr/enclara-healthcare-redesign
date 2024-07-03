@@ -240,7 +240,6 @@ wp_reset_postdata();
 		if ($execquery->have_posts()) : while ($execquery->have_posts()) : $execquery->the_post();
 
 				$fields = get_fields();
-				$image_url = !empty($fields['executive_team_member_image']) ? esc_url($fields['executive_team_member_image']) : 'path/to/default/image.jpg';
 
 		?>
 
@@ -251,7 +250,7 @@ wp_reset_postdata();
 						<div class="card-wrapper">
 
 							<div class="card-wrapper--inner">
-								<img src="<?php echo $image_url; ?>" alt="<?php echo $fields['executive_team_member_title']; ?>">
+								<img class="wmu-preview-img" src="<?php echo $fields['executive_team_member_image']; ?>" alt="<?php echo $fields['executive_team_member_title']; ?>">
 
 								<h5><?php the_title(); ?></h5>
 
