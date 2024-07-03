@@ -43,8 +43,12 @@ wp_reset_postdata();
 		color: #fff;
 		font-size: 2.1em;
 	}
-	
-	
+	.exec-bio--img{
+		border-radius: 100%;
+	}
+	.exec-bio--img img{
+		width: 200px;
+	}
 	.about-hero--content {
 		background: linear-gradient(0deg, #2a3754, #39466e 90%, rgba(10, 50, 84, 0) 100%);
 	}

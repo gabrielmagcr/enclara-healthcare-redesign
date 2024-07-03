@@ -13,7 +13,7 @@ $execs.each(function(index) {
 			imgSrc = $t.find('img').attr('src');
 
 	var templ = '<div class="exec-bio">';
-	templ += '<div class="exec-bio--title"><img src="'+imgSrc+'"><h3>'+name+'</h3><p>'+pos+'</p><hr></div>';
+	templ += '<div class="exec-bio--title"><div class="exec-bio--img"><img src="'+imgSrc+'"></div><h3>'+name+'</h3><p>'+pos+'</p><hr></div>';
 	templ += '<div class="exec-bio--bio">'+biohtml+'</div>';
 	templ += '</div>';
 	
