@@ -43,18 +43,27 @@ wp_reset_postdata();
 		color: #fff;
 		font-size: 2.1em;
 	}
-	.exec-bio--img{
+
+	.exec-bio--img {
 		border-radius: 100%;
 	}
-	.exec-bio--img img{
+
+	.exec-bio--img img {
+		border: 2px solid #E41D3A;
 		width: 200px;
+		border-radius: 100%;
 	}
+
 	.about-hero--content {
 		background: linear-gradient(0deg, #2a3754, #39466e 90%, rgba(10, 50, 84, 0) 100%);
 	}
-	.card-wrapper--inner img{
+
+	.card-wrapper--inner img {
+		border: 2px solid #E41D3A;
 		width: 100px;
+		border-radius: 100%;
 	}
+
 	@media (min-width: 426px) {
 		.hero-bg {
 			height: 500px;
@@ -79,16 +88,20 @@ wp_reset_postdata();
 			text-align: start;
 			color: #fff;
 		}
-		.about-hero--content h1{
+
+		.about-hero--content h1 {
 			margin-bottom: 0;
 		}
-		.divider{
+
+		.divider {
 			margin-top: 1em !important;
 		}
-		.about--content{
+
+		.about--content {
 			align-items: flex-start;
 
 		}
+
 		.about--content p {
 			color: #fff;
 			font-size: 0.9em;
@@ -101,13 +114,14 @@ wp_reset_postdata();
 		.hero-bg {
 			background-size: contain !important;
 			background-position: right !important;
-			
+
 		}
+
 		.about--content p {
-			
+
 			font-size: 1.05em;
 			max-width: none;
-	}
+		}
 	}
 </style>
 
@@ -327,8 +341,8 @@ wp_reset_postdata();
 								<h5><?php the_title(); ?></h5>
 
 								<p><span><?php echo $fields['executive_team_member_title']; ?></span></p>
-								
-							
+
+
 
 							</div>
 
