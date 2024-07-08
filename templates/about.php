@@ -49,7 +49,7 @@ wp_reset_postdata();
 	}
 
 	.exec-bio--img img {
-		border: 2px solid #E41D3A;
+		border: 1px solid #E41D3A;
 		width: 200px;
 		border-radius: 100%;
 	}
