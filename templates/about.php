@@ -59,7 +59,7 @@ wp_reset_postdata();
 	}
 
 	.card-wrapper--inner img {
-		border: 2px solid #E41D3A;
+		border: 1px solid #E41D3A;
 		width: 100px;
 		border-radius: 100%;
 	}
