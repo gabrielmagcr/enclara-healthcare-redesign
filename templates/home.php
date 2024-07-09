@@ -73,7 +73,7 @@ wp_reset_postdata();
 			<blockquote><?php echo $fields['what_we_do'] ?></blockquote>
 		</div>
 	</div>
-<!--
+
 	<div class="inner feature-cols">
 	<?php
 		/* Comentario de la sección feature-cols
@@ -94,7 +94,7 @@ wp_reset_postdata();
 		} 
 		*/ ?>
 	</div>
--->
+
 	<div class="enc-swirly"></div>
 </section>
 
