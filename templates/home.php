@@ -75,7 +75,8 @@ wp_reset_postdata();
 	</div>
 <!--
 	<div class="inner feature-cols">
-		<?php
+	<?php
+		/* Comentario de la sección feature-cols
 		if ($fields['wwd_cols']) {
 			$count = 0;
 			foreach ($fields['wwd_cols'] as $col) {
@@ -88,11 +89,12 @@ wp_reset_postdata();
 						<p><?php echo $col['text']; ?></p>
 					</div>
 				</div>
-			-->
-		<?php	}
-		} ?>
-	</div>
 
+		<?php	}
+		} 
+		*/ ?>
+	</div>
+-->
 	<div class="enc-swirly"></div>
 </section>
 
