@@ -74,6 +74,25 @@ wp_reset_postdata();
 		</div>
 	</div>
 	
+	<div class="inner feature-cols">
+	<?php
+		/* Comentario de la sección feature-cols
+		if ($fields['wwd_cols']) {
+			$count = 0;
+			foreach ($fields['wwd_cols'] as $col) {
+				$count++; ?>
+
+				<div class="col-third" data-in-view>
+					<div class="feature-col-content">
+						<figure><img src="<?php echo "$root/assets/img/icon-service-" . $count . ".png"; ?>"></figure>
+						<h4><?php echo $col['title']; ?></h4>
+						<p><?php echo $col['text']; ?></p>
+					</div>
+				</div>
+
+		<?php	}
+		} 
+		*/ ?>
 
 	<div class="enc-swirly"></div>
 </section>
