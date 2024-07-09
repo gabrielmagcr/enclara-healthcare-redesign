@@ -38,79 +38,10 @@ wp_reset_postdata();
 
 ?>
 
-<style>
-	.about-hero--content h1 {
-		color: #fff;
-		font-size: 2.1em;
-	}
-	
-	
-	.about-hero--content {
-		background: linear-gradient(0deg, #2a3754, #39466e 90%, rgba(10, 50, 84, 0) 100%);
-	}
-	.card-wrapper--inner img{
-		width: 100px;
-	}
-	@media (min-width: 426px) {
-		.hero-bg {
-			height: 500px;
-		}
-	}
-
-	@media (min-width: 1023px) {
-		.hero-bg {
-			background: url('/wp-content/uploads/EnclaraHealthCareHero3-e1718999227732.webp') !important;
-			background-size: cover !important;
-			background-repeat: no-repeat !important;
-			background-position: left !important;
-			height: 70vh;
-		}
-
-		.about-hero--content {
-			background: linear-gradient(90deg, #39466e, #39466e 80%, rgba(10, 50, 84, 0) 100%);
-			display: flex;
-			flex-direction: column;
-			align-items: flex-start;
-			justify-content: center;
-			text-align: start;
-			color: #fff;
-		}
-		.about-hero--content h1{
-			margin-bottom: 0;
-		}
-		.divider{
-			margin-top: 1em !important;
-		}
-		.about--content{
-			align-items: flex-start;
-
-		}
-		.about--content p {
-			color: #fff;
-			font-size: 0.9em;
-			line-height: 25px;
-			font-weight: 500;
-		}
-	}
-
-	@media(min-width: 1350px) {
-		.hero-bg {
-			background-size: contain !important;
-			background-position: right !important;
-			
-		}
-		.about--content p {
-			
-			font-size: 1.05em;
-			max-width: none;
-	}
-	}
-</style>
-
 
 <section class="">
 	<div class="hero-bg-container">
-		<div class="hero-bg" style="background: url('/wp-content/uploads/EnclaraHealthCareHero2.webp');  background-repeat: no-repeat; background-position: top; background-size: cover;"></div>
+		<div class="hero-bg about-bg" style="background: url('/wp-content/uploads/EnclaraHealthCareHero2.webp');  background-repeat: no-repeat; background-position: top; background-size: cover;"></div>
 		<div class=" home-hero--content about-hero--content">
 			<div class="hero--content about--content">
 				<?php do_page_headline($fields['sub_headline'], $fields['main_headline']); ?>
@@ -250,7 +181,7 @@ wp_reset_postdata();
 						<div class="card-wrapper">
 
 							<div class="card-wrapper--inner">
-								<img src="<?php echo $fields['executive_team_member_image']; ?>" alt="<?php echo $fields['executive_team_member_title']; ?>">
+								<img class="wmu-preview-img" src="<?php echo $fields['executive_team_member_image']; ?>" alt="<?php echo $fields['executive_team_member_title']; ?>">
 
 								<h5><?php the_title(); ?></h5>
 
@@ -323,8 +254,8 @@ wp_reset_postdata();
 								<h5><?php the_title(); ?></h5>
 
 								<p><span><?php echo $fields['executive_team_member_title']; ?></span></p>
-								
-							
+
+
 
 							</div>
 

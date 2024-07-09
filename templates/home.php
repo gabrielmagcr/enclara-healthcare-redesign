@@ -26,9 +26,7 @@ if (have_posts()) : while (have_posts()) : the_post();
 endif;
 wp_reset_postdata();
 ?>
-<style>
 
-</style>
 
 <section class="block-hero home-hero">
 	<div class="hero-bg-container">
