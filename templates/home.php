@@ -76,7 +76,6 @@ wp_reset_postdata();
 	<!--
 	<div class="inner feature-cols">
 		<?php
-		/*
 		if ($fields['wwd_cols']) {
 			$count = 0;
 			foreach ($fields['wwd_cols'] as $col) {
@@ -90,7 +89,6 @@ wp_reset_postdata();
 					</div>
 				</div>
 			-->
-			*/
 		<?php	}
 		} ?>
 	</div>
