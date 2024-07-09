@@ -73,7 +73,7 @@ wp_reset_postdata();
 			<blockquote><?php echo $fields['what_we_do'] ?></blockquote>
 		</div>
 	</div>
-
+<!--
 	<div class="inner feature-cols">
 		<?php
 		if ($fields['wwd_cols']) {
@@ -88,7 +88,7 @@ wp_reset_postdata();
 						<p><?php echo $col['text']; ?></p>
 					</div>
 				</div>
-
+			-->
 		<?php	}
 		} ?>
 	</div>
