@@ -74,6 +74,7 @@ wp_reset_postdata();
 		</div>
 	</div>
 	
+	<!--
 	<div class="inner feature-cols">
 	<?php
 		/* Comentario de la sección feature-cols
@@ -92,7 +93,7 @@ wp_reset_postdata();
 
 		<?php	}
 		} 
-		*/ ?>
+		*/ ?>-->
 
 	<div class="enc-swirly"></div>
 </section>
