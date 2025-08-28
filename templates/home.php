@@ -28,7 +28,7 @@ wp_reset_postdata();
 ?>
 
 
-<section class="block-hero home-hero">
+<section class="block-hero home-hero test2">
 	<div class="hero-bg-container">
 		<div class="hero-bg" style="background: url('/wp-content/uploads/EnclaraHealthCareDesktop.webp');  background-repeat: no-repeat; background-position: top; background-size: cover;"></div>
 		<div class="home-hero--content">
