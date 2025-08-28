@@ -32,7 +32,7 @@ wp_reset_postdata();
 		<div class="dragon-hero--content">
 				<div><?php if(get_field('dragon_logo')): ?><img src="<?php echo get_field('dragon_logo'); ?>" alt="Dragon Logo"><?php endif; ?></div>
 				<div><?php if(get_field('dragon_text')): ?><h1><?php echo get_field('dragon_text'); ?></h1><?php endif; ?></div>
-				<div><?php if(get_field('dragon_url')): ?><a href="<?php echo get_field('dragon_url'); ?>"><?php if(get_field('dragon_cta_text')): ?><?php echo get_field('dragon_cta_text'); ?><?php else: ?>Learn More<?php endif; ?></a><?php endif; ?></div>
+				<div><?php if(get_field('dragon_url')): ?><a class="button learn-more" href="<?php echo get_field('dragon_url'); ?>"><?php if(get_field('dragon_cta_text')): ?><?php echo get_field('dragon_cta_text'); ?><?php else: ?>Learn More<?php endif; ?></a><?php endif; ?></div>
 		</div>
 	</section>
 <?php endif; ?>
