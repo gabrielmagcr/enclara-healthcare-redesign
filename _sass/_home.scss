@@ -217,6 +217,13 @@
       text-align: center;
       color: white;
     }
+     a{
+            color: white;
+    background: #E41D3A;
+    padding: 20px 30px;
+    font-size: 18px;
+    font-weight: 600;
+      }
   }
   @media (min-width: 1023px) {
     .dragon-hero--content {
@@ -227,13 +234,7 @@
         text-align: start;
         font-size: 36px;
       }
-      a{
-            color: white;
-    background: #E41D3A;
-    padding: 20px 30px;
-    font-size: 18px;
-    font-weight: 600;
-      }
+     
     }
   }
 }
