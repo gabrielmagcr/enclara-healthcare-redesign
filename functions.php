@@ -244,3 +244,18 @@ if ( ! function_exists( 'mag_pagination' ) ) :
 		) );
 	}
 endif;
+
+function permitir_svg($mimes) {
+    $mimes['svg']  = 'image/svg+xml';
+    $mimes['svgz'] = 'image/svg+xml';
+    return $mimes;
+}
+add_filter('upload_mimes', 'permitir_svg');
+
+function sanitizar_svg($file) {
+    if ($file['type'] === 'image/svg+xml') {
+        $file['type'] = 'image/svg+xml';
+    }
+    return $file;
+}
+add_filter('wp_check_filetype_and_ext', 'sanitizar_svg', 10, 4);
