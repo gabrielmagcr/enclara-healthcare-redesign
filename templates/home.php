@@ -29,7 +29,7 @@ wp_reset_postdata();
 
 <?php if(get_field('toggle_dragon_hero_background')):?>
 	<section class="dragon-hero" <?php if(get_field('dragon_background')): ?>style="background: url('<?php echo get_field('dragon_background'); ?>');  background-repeat: no-repeat; background-position: top; background-size: cover;"<?php endif; ?>>
-		<div class="dragon-hero--content">
+		<div class="dragon-hero--content inner">
 				<div><?php if(get_field('dragon_logo')): ?><img src="<?php echo get_field('dragon_logo'); ?>" alt="Dragon Logo"><?php endif; ?></div>
 				<div><?php if(get_field('dragon_text')): ?><h1><?php echo get_field('dragon_text'); ?></h1><?php endif; ?></div>
 				<div><?php if(get_field('dragon_url')): ?><a class="button learn-more" href="<?php echo get_field('dragon_url'); ?>"><?php if(get_field('dragon_cta_text')): ?><?php echo get_field('dragon_cta_text'); ?><?php else: ?>Learn More<?php endif; ?></a><?php endif; ?></div>
