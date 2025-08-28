@@ -199,11 +199,13 @@
 	}
 
 .dragon-hero{
-  height: 45dvh;
+  height: 50dvh;
   .dragon-hero--content{
-        display: flex;
+            display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    height: 100%;
     img{
       width: 300px;
     }
@@ -212,4 +214,14 @@
       color: white;
     }
   }
+  @media (min-width: 1023px) {
+    .dragon-hero--content {
+      align-items: flex-start;
+      h1 {
+        text-align: start;
+        font-size: 36px;
+      }
+    }
+  }
 }
+
