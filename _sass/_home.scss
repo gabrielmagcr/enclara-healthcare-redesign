@@ -6,18 +6,26 @@
 
   #main-nav {
     margin: 0 auto;
-    text-align: center;
+    text-align: end;
     float: none;
-
+    img{
+      width: 60%;
+    }
     li {
       a {
-        color: white !important;
+        color: #2a3754 !important;
       }
     }
+      @media (min-width:$bp-md) {
+    img{
+      width: 200px;
+      height: 75px;
+    }
+  }
   }
 
   .site-header {
-    background-color: #2a3754;
+    background-color: white;
     .inner {
       border: none !important;
     }

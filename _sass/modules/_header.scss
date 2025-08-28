@@ -133,9 +133,10 @@
 	}
 	
 	.primary-nav {
-		display:block !important;
-		background: transparent;
-		float: right;
+		display:flex !important;
+		align-items: center;
+        justify-content: center;
+        gap: 40px;
 
 		li {
 			position: relative;
