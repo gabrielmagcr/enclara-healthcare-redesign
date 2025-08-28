@@ -27,7 +27,15 @@ endif;
 wp_reset_postdata();
 ?>
 
-
+<?php if(get_field('toggle_dragon_hero_background')):?>
+	<section class="dragon-hero" <?php if(get_field('dragon_hero_background_image')): ?>style="background: url('<?php echo get_field('dragon_hero_background_image'); ?>');  background-repeat: no-repeat; background-position: top; background-size: cover;"<?php endif; ?>>
+		<div class="dragon-hero--content">
+				<div><?php if(get_field('dragon_logo')): ?><img src="<?php echo get_field('dragon_logo'); ?>" alt="Dragon Logo"><?php endif; ?></div>
+				<div><?php if(get_field('dragon_text')): ?><h1><?php echo get_field('dragon_text'); ?></h1><?php endif; ?></div>
+				<div><?php if(get_field('dragon_url')): ?><a href="<?php echo get_field('dragon_url'); ?>"><?php if(get_field('dragon_cta_text')): ?><?php echo get_field('dragon_cta_text'); ?><?php else: ?>Learn More<?php endif; ?></a><?php endif; ?></div>
+		</div>
+	</section>
+<?php endif; ?>
 <?php if(get_field('toggle_home_hero_background')): ?>
 <section class="block-hero home-hero test2">
 	<div class="hero-bg-container">
