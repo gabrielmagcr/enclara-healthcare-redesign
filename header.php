@@ -105,7 +105,7 @@ $root = get_template_directory_uri();
             </div>
             <div class="site-header_right">
               <nav id="main-nav" class="primary-nav" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-                <img src="/wp-content/uploads/EHC_Logo-NoBG.png' ?>" alt="<?php echo bloginfo('site_title'); ?>" />
+                <img src="/wp-content/uploads/EHC_Logo-NoBG.webp' ?>" alt="<?php echo bloginfo('site_title'); ?>" />
                 <ul>
                     <li class="<?php if (is_page_template('templates/about.php')) { echo 'is-current-page'; } ?>">
                         <a href="<?php echo get_site_url() . '/about'; ?>">About</a>
