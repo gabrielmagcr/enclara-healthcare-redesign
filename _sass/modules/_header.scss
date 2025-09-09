@@ -91,13 +91,7 @@
 
 //SM Up
 //---------------//
-@media (min-width:$bp-sm) {
-	.home {
-		#site-title {
-			display: none !important;
-		}
-	}
-}
+
 
 //MD UP
 //---------------//
@@ -207,11 +201,7 @@
 		}
 	}
 
-	.home {
-		.site-header_left, #site-title {
-			display: none !important;
-		}
-	}
+
 
 }
 
@@ -239,11 +229,7 @@
 		}
 	}
 
-	.home {
-		.site-header_left, #site-title {
-			display: none !important;
-		}
-	}
+
 
 
 }
@@ -269,11 +255,7 @@
 		}
 	}
 
-	.home {
-		.site-header_left, #site-title {
-			display: none !important;
-		}
-	}
+
 
 
 }
