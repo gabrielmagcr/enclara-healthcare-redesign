@@ -1,8 +1,6 @@
 .home {
 
-  .site-header_right {
-    width: 100%;
-  }
+
 
   #main-nav {
     margin: 0 auto;
@@ -203,7 +201,7 @@
 	}
 
 .dragon-hero{
-  height: 50dvh;
+
   .dragon-hero--content{
             display: flex;
     flex-direction: column;
@@ -227,6 +225,7 @@
       }
   }
   @media (min-width: 1023px) {
+      height: 50dvh;
     .dragon-hero--content {
       align-items: flex-start;
           width: 80%;
